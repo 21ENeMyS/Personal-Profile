@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/libs/bootstrap-5.0.0-beta/css/bootstrap.min.css">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/libs/fontawesome.5.15.1/css/all.min.css">
+
+  <!-- Css lokal -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+  <!-- Css AOS -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/img/farhan 06.png" type="image/x-icon">
+
+  <title>Almarup</title>
+</head>
+
+<body>
+
+  <!-- loader -->
+  <div class="preloader">
+    <svg class="loader" id="loader" width="805" height="283" viewBox="0 0 805 283" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="-1" y="0" width="806" height="283" fill="black">
+        <rect fill="white" x="-1" width="806" height="283" />
+        <path
+          d="M65.415 138.281H107.743L114.634 38.2969L65.415 138.281ZM55.4306 159.094L27.4463 215.766C25.29 220.172 21.7275 222.094 16.7587 221.531L10.1494 220.969C6.86812 220.781 4.71188 219.562 3.68063 217.312C2.64938 214.969 2.79 212.531 4.1025 210L100.009 25.0781C104.04 17.3906 109.337 13.5469 115.899 13.5469L127.431 13.2656C135.024 13.2656 138.54 17.9062 137.977 27.1875L127.993 215.203C127.618 219.234 124.712 221.344 119.274 221.531L109.571 221.25C104.696 221.25 102.446 218.672 102.821 213.516L106.618 159.094H55.4306Z" />
+        <path
+          d="M224.743 9.60938L172.29 215.203C171.165 219.422 168.259 221.531 163.571 221.531H158.79C151.665 221.531 148.852 218.438 150.352 212.25L203.087 9.32812C204.212 5.10938 207.071 3 211.665 3H218.274C223.712 3 225.868 5.20312 224.743 9.60938Z" />
+        <path
+          d="M239.79 82.7344C240.727 79.0781 241.571 76.9219 242.321 76.2656C243.165 75.6094 244.243 75.2812 245.556 75.2812H257.368C262.149 75.2812 263.696 78.0469 262.009 83.5781L240.352 156.141L270.306 106.641C276.118 96.9844 282.54 89.3438 289.571 83.7188C296.696 78.0938 302.556 75.2812 307.149 75.2812H313.196C316.29 75.2812 318.681 75.7969 320.368 76.8281C322.149 77.8594 323.556 80.2031 324.587 83.8594C325.712 87.5156 325.196 92.9062 323.04 100.031L308.415 153.891L335.978 106.359C341.978 95.9531 348.399 88.1719 355.243 83.0156C362.181 77.8594 368.04 75.2812 372.821 75.2812H378.868C381.962 75.2812 384.353 75.7969 386.04 76.8281C387.821 77.8594 389.228 80.2031 390.259 83.8594C391.29 87.5156 390.774 92.9062 388.712 100.031L356.509 217.453C355.853 220.172 354.306 221.531 351.868 221.531H336.821C334.009 221.531 333.259 219.234 334.571 214.641L364.806 115.781C366.306 110.625 367.056 107.25 367.056 105.656C367.056 103.969 366.399 103.125 365.087 103.125C363.774 103.125 362.181 104.016 360.306 105.797C358.524 107.484 356.087 110.625 352.993 115.219C349.337 120.469 345.353 126.609 341.04 133.641C336.728 140.578 331.056 149.531 324.024 160.5C316.993 171.469 312.353 178.875 310.103 182.719C301.478 196.688 295.056 208.266 290.837 217.453C289.618 220.172 287.978 221.531 285.915 221.531H271.149C268.337 221.531 267.587 219.234 268.899 214.641L299.134 115.781C300.634 110.625 301.384 107.25 301.384 105.656C301.384 103.969 300.728 103.125 299.415 103.125C298.103 103.125 296.509 104.016 294.634 105.797C292.853 107.484 290.415 110.625 287.321 115.219C283.665 120.469 279.259 127.266 274.103 135.609C268.946 143.953 262.431 154.266 254.556 166.547C239.743 189.141 229.243 206.109 223.056 217.453C221.556 220.172 219.259 221.531 216.165 221.531H208.149C207.024 221.531 206.087 220.781 205.337 219.281C204.493 217.688 204.352 215.953 204.915 214.078L239.79 82.7344Z" />
+        <path
+          d="M478.29 81.0469C479.04 76.5469 481.243 74.2969 484.899 74.2969L491.509 74.0156C498.54 74.2031 501.118 77.6719 499.243 84.4219L464.649 199.594C470.649 195.188 476.603 188.859 482.509 180.609C484.665 177.516 487.056 176.859 489.681 178.641L496.712 183.281C499.712 185.344 500.181 187.734 498.118 190.453C490.243 199.641 482.978 206.812 476.321 211.969C469.759 217.031 461.931 220.594 452.837 222.656C450.212 223.031 448.478 222 447.634 219.562L442.29 203.672C436.853 210.797 432.212 215.719 428.368 218.438C424.524 221.062 421.571 222.375 419.509 222.375H418.946C417.353 222.375 414.962 221.297 411.774 219.141C408.681 216.891 405.587 213.984 402.493 210.422C399.399 206.859 397.149 202.969 395.743 198.75C394.431 194.531 394.524 186.891 396.024 175.828C397.618 164.672 402.024 149.109 409.243 129.141C416.462 109.172 423.868 95.25 431.462 87.375C439.056 79.5 448.571 75.6562 460.009 75.8438C466.384 75.8438 472.478 77.5781 478.29 81.0469ZM473.931 97.0781C463.712 91.3594 455.368 91.2656 448.899 96.7969C442.524 102.234 436.243 113.391 430.056 130.266C423.962 147.141 419.978 160.406 418.103 170.062C416.321 179.625 415.571 186.141 415.853 189.609C416.134 193.078 417.821 195.609 420.915 197.203C424.009 198.797 429.118 195.656 436.243 187.781C443.462 179.906 449.743 169.125 455.087 155.438C460.524 141.75 466.806 122.297 473.931 97.0781Z" />
+        <path
+          d="M549.868 113.812C555.962 103.875 561.587 95.625 566.743 89.0625C571.993 82.5 575.79 78.4219 578.134 76.8281C580.571 75.1406 584.79 74.2969 590.79 74.2969H593.602C599.227 74.2969 601.149 76.4531 599.368 80.7656C598.431 83.0156 596.087 85.8281 592.337 89.2031C588.587 92.5781 583.477 98.3438 577.009 106.5C570.634 114.656 567.446 119.953 567.446 122.391C567.446 127.453 569.837 132.188 574.618 136.594C575.743 137.531 576.071 138.562 575.602 139.688C575.134 140.719 574.149 141.422 572.649 141.797L561.681 143.766C558.587 144.328 556.196 144 554.509 142.781C552.915 141.562 550.102 137.203 546.071 129.703L523.993 215.203C522.774 219.422 519.868 221.531 515.274 221.531H506.978C501.54 221.531 499.431 219.328 500.649 214.922L535.806 81.0469C536.743 77.2031 539.415 75.2812 543.821 75.2812H552.681C555.212 75.2812 556.899 75.7031 557.743 76.5469C558.587 77.3906 558.727 78.9844 558.165 81.3281L549.868 113.812Z" />
+        <path
+          d="M663.071 146.016L636.774 190.172C630.681 200.672 624.446 208.547 618.071 213.797C611.79 218.953 606.259 221.531 601.477 221.531H599.649C593.743 221.531 589.102 218.297 585.727 211.828C582.352 205.266 582.118 196.781 585.024 186.375L614.415 79.2188C614.977 76.5938 616.477 75.2812 618.915 75.2812H633.962C636.868 75.2812 637.618 77.5781 636.212 82.1719L607.102 182.016C605.79 188.016 605.602 191.859 606.54 193.547C608.696 196.641 613.524 192.516 621.024 181.172C628.524 169.828 647.884 135.844 679.102 79.2188C680.696 76.5938 683.04 75.2812 686.134 75.2812H696.962C698.181 75.2812 699.165 76.0312 699.915 77.5312C700.665 79.0312 700.759 80.7656 700.196 82.7344L665.321 214.078C664.384 219.047 662.462 221.531 659.556 221.531H647.743C643.149 221.531 641.602 218.766 643.102 213.234L663.071 146.016Z" />
+        <path
+          d="M722.556 201.422C731.931 206.766 739.899 207.188 746.462 202.688C753.118 198.188 759.587 187.219 765.868 169.781C772.243 152.25 776.321 138.609 778.102 128.859C779.977 119.016 780.774 112.359 780.493 108.891C780.212 105.422 778.477 102.844 775.29 101.156C772.196 99.4688 766.946 102.891 759.54 111.422C752.134 119.953 745.806 130.922 740.556 144.328C735.399 157.734 729.681 175.875 723.399 198.75L722.556 201.422ZM753.071 81.6094L746.462 107.203L750.399 100.594C754.431 93.8438 759.024 88.0781 764.181 83.2969C769.431 78.5156 773.696 76.125 776.977 76.125H777.54C779.04 76.125 781.431 77.25 784.712 79.5C787.993 81.6562 791.087 84.6094 793.993 88.3594C796.993 92.1094 799.102 95.9531 800.321 99.8906C801.634 103.828 801.54 111.797 800.04 123.797C798.634 135.797 794.087 151.922 786.399 172.172C778.712 192.422 771.212 205.922 763.899 212.672C756.681 219.328 747.493 222.656 736.337 222.656C729.962 222.656 723.915 220.922 718.196 217.453L704.134 272.859C702.915 277.078 700.009 279.188 695.415 279.188H690.212C687.118 279.188 684.962 278.297 683.743 276.516C682.524 274.828 682.196 272.625 682.759 269.906L731.134 81.3281C732.259 77.2969 734.837 75.2812 738.868 75.2812H747.306C752.274 75.2812 754.196 77.3906 753.071 81.6094Z" />
+      </mask>
+      <path
+        d="M65.415 138.281H107.743L114.634 38.2969L65.415 138.281ZM55.4306 159.094L27.4463 215.766C25.29 220.172 21.7275 222.094 16.7587 221.531L10.1494 220.969C6.86812 220.781 4.71188 219.562 3.68063 217.312C2.64938 214.969 2.79 212.531 4.1025 210L100.009 25.0781C104.04 17.3906 109.337 13.5469 115.899 13.5469L127.431 13.2656C135.024 13.2656 138.54 17.9062 137.977 27.1875L127.993 215.203C127.618 219.234 124.712 221.344 119.274 221.531L109.571 221.25C104.696 221.25 102.446 218.672 102.821 213.516L106.618 159.094H55.4306Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+      <path
+        d="M224.743 9.60938L172.29 215.203C171.165 219.422 168.259 221.531 163.571 221.531H158.79C151.665 221.531 148.852 218.438 150.352 212.25L203.087 9.32812C204.212 5.10938 207.071 3 211.665 3H218.274C223.712 3 225.868 5.20312 224.743 9.60938Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+      <path
+        d="M239.79 82.7344C240.727 79.0781 241.571 76.9219 242.321 76.2656C243.165 75.6094 244.243 75.2812 245.556 75.2812H257.368C262.149 75.2812 263.696 78.0469 262.009 83.5781L240.352 156.141L270.306 106.641C276.118 96.9844 282.54 89.3438 289.571 83.7188C296.696 78.0938 302.556 75.2812 307.149 75.2812H313.196C316.29 75.2812 318.681 75.7969 320.368 76.8281C322.149 77.8594 323.556 80.2031 324.587 83.8594C325.712 87.5156 325.196 92.9062 323.04 100.031L308.415 153.891L335.978 106.359C341.978 95.9531 348.399 88.1719 355.243 83.0156C362.181 77.8594 368.04 75.2812 372.821 75.2812H378.868C381.962 75.2812 384.353 75.7969 386.04 76.8281C387.821 77.8594 389.228 80.2031 390.259 83.8594C391.29 87.5156 390.774 92.9062 388.712 100.031L356.509 217.453C355.853 220.172 354.306 221.531 351.868 221.531H336.821C334.009 221.531 333.259 219.234 334.571 214.641L364.806 115.781C366.306 110.625 367.056 107.25 367.056 105.656C367.056 103.969 366.399 103.125 365.087 103.125C363.774 103.125 362.181 104.016 360.306 105.797C358.524 107.484 356.087 110.625 352.993 115.219C349.337 120.469 345.353 126.609 341.04 133.641C336.728 140.578 331.056 149.531 324.024 160.5C316.993 171.469 312.353 178.875 310.103 182.719C301.478 196.688 295.056 208.266 290.837 217.453C289.618 220.172 287.978 221.531 285.915 221.531H271.149C268.337 221.531 267.587 219.234 268.899 214.641L299.134 115.781C300.634 110.625 301.384 107.25 301.384 105.656C301.384 103.969 300.728 103.125 299.415 103.125C298.103 103.125 296.509 104.016 294.634 105.797C292.853 107.484 290.415 110.625 287.321 115.219C283.665 120.469 279.259 127.266 274.103 135.609C268.946 143.953 262.431 154.266 254.556 166.547C239.743 189.141 229.243 206.109 223.056 217.453C221.556 220.172 219.259 221.531 216.165 221.531H208.149C207.024 221.531 206.087 220.781 205.337 219.281C204.493 217.688 204.352 215.953 204.915 214.078L239.79 82.7344Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+      <path
+        d="M478.29 81.0469C479.04 76.5469 481.243 74.2969 484.899 74.2969L491.509 74.0156C498.54 74.2031 501.118 77.6719 499.243 84.4219L464.649 199.594C470.649 195.188 476.603 188.859 482.509 180.609C484.665 177.516 487.056 176.859 489.681 178.641L496.712 183.281C499.712 185.344 500.181 187.734 498.118 190.453C490.243 199.641 482.978 206.812 476.321 211.969C469.759 217.031 461.931 220.594 452.837 222.656C450.212 223.031 448.478 222 447.634 219.562L442.29 203.672C436.853 210.797 432.212 215.719 428.368 218.438C424.524 221.062 421.571 222.375 419.509 222.375H418.946C417.353 222.375 414.962 221.297 411.774 219.141C408.681 216.891 405.587 213.984 402.493 210.422C399.399 206.859 397.149 202.969 395.743 198.75C394.431 194.531 394.524 186.891 396.024 175.828C397.618 164.672 402.024 149.109 409.243 129.141C416.462 109.172 423.868 95.25 431.462 87.375C439.056 79.5 448.571 75.6562 460.009 75.8438C466.384 75.8438 472.478 77.5781 478.29 81.0469ZM473.931 97.0781C463.712 91.3594 455.368 91.2656 448.899 96.7969C442.524 102.234 436.243 113.391 430.056 130.266C423.962 147.141 419.978 160.406 418.103 170.062C416.321 179.625 415.571 186.141 415.853 189.609C416.134 193.078 417.821 195.609 420.915 197.203C424.009 198.797 429.118 195.656 436.243 187.781C443.462 179.906 449.743 169.125 455.087 155.438C460.524 141.75 466.806 122.297 473.931 97.0781Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+      <path
+        d="M549.868 113.812C555.962 103.875 561.587 95.625 566.743 89.0625C571.993 82.5 575.79 78.4219 578.134 76.8281C580.571 75.1406 584.79 74.2969 590.79 74.2969H593.602C599.227 74.2969 601.149 76.4531 599.368 80.7656C598.431 83.0156 596.087 85.8281 592.337 89.2031C588.587 92.5781 583.477 98.3438 577.009 106.5C570.634 114.656 567.446 119.953 567.446 122.391C567.446 127.453 569.837 132.188 574.618 136.594C575.743 137.531 576.071 138.562 575.602 139.688C575.134 140.719 574.149 141.422 572.649 141.797L561.681 143.766C558.587 144.328 556.196 144 554.509 142.781C552.915 141.562 550.102 137.203 546.071 129.703L523.993 215.203C522.774 219.422 519.868 221.531 515.274 221.531H506.978C501.54 221.531 499.431 219.328 500.649 214.922L535.806 81.0469C536.743 77.2031 539.415 75.2812 543.821 75.2812H552.681C555.212 75.2812 556.899 75.7031 557.743 76.5469C558.587 77.3906 558.727 78.9844 558.165 81.3281L549.868 113.812Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+      <path
+        d="M663.071 146.016L636.774 190.172C630.681 200.672 624.446 208.547 618.071 213.797C611.79 218.953 606.259 221.531 601.477 221.531H599.649C593.743 221.531 589.102 218.297 585.727 211.828C582.352 205.266 582.118 196.781 585.024 186.375L614.415 79.2188C614.977 76.5938 616.477 75.2812 618.915 75.2812H633.962C636.868 75.2812 637.618 77.5781 636.212 82.1719L607.102 182.016C605.79 188.016 605.602 191.859 606.54 193.547C608.696 196.641 613.524 192.516 621.024 181.172C628.524 169.828 647.884 135.844 679.102 79.2188C680.696 76.5938 683.04 75.2812 686.134 75.2812H696.962C698.181 75.2812 699.165 76.0312 699.915 77.5312C700.665 79.0312 700.759 80.7656 700.196 82.7344L665.321 214.078C664.384 219.047 662.462 221.531 659.556 221.531H647.743C643.149 221.531 641.602 218.766 643.102 213.234L663.071 146.016Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+      <path
+        d="M722.556 201.422C731.931 206.766 739.899 207.188 746.462 202.688C753.118 198.188 759.587 187.219 765.868 169.781C772.243 152.25 776.321 138.609 778.102 128.859C779.977 119.016 780.774 112.359 780.493 108.891C780.212 105.422 778.477 102.844 775.29 101.156C772.196 99.4688 766.946 102.891 759.54 111.422C752.134 119.953 745.806 130.922 740.556 144.328C735.399 157.734 729.681 175.875 723.399 198.75L722.556 201.422ZM753.071 81.6094L746.462 107.203L750.399 100.594C754.431 93.8438 759.024 88.0781 764.181 83.2969C769.431 78.5156 773.696 76.125 776.977 76.125H777.54C779.04 76.125 781.431 77.25 784.712 79.5C787.993 81.6562 791.087 84.6094 793.993 88.3594C796.993 92.1094 799.102 95.9531 800.321 99.8906C801.634 103.828 801.54 111.797 800.04 123.797C798.634 135.797 794.087 151.922 786.399 172.172C778.712 192.422 771.212 205.922 763.899 212.672C756.681 219.328 747.493 222.656 736.337 222.656C729.962 222.656 723.915 220.922 718.196 217.453L704.134 272.859C702.915 277.078 700.009 279.188 695.415 279.188H690.212C687.118 279.188 684.962 278.297 683.743 276.516C682.524 274.828 682.196 272.625 682.759 269.906L731.134 81.3281C732.259 77.2969 734.837 75.2812 738.868 75.2812H747.306C752.274 75.2812 754.196 77.3906 753.071 81.6094Z"
+        stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+    </svg>
+  </div>
+
+  <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
+  <label for="dark-light" class="dark"></label>
+
+  <div class="light-back"></div>
+
+
+
+
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Almarup</a>
+        <div class="btn btn-block navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="toggle" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#client">Companies</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link button" href="assets/Dowload-CV.pdf" translate="yes" target="_blank">Download</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-features mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="features-description">
+              <h5>Hi, I'm Almarup</h5>
+              <h1 class="txt-type" data-wait="3000" data-words='["Fullstack Developer.","UI and UX Designer."]'></h1>
+              <p>I have expertise in UI UX web designer and website developer
+              </p>
+              <a href="assets/Dowload-CV.pdf" target="_blank" class="button-primary mt-3">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- end navbar -->
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right">
+          <div class="profile-img">
+            <img src="assets/img/farhan-05.png" alt="" class="profile">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="about-details" data-aos="fade-left">
+            <div class="about-heading">
+              <h1>About</h1>
+            </div>
+            <p>I am a <span>Fullstack Developer</span> and UI UX Designer. I am still studying at Bina Sarana
+              Informatika University in Sukabumi, Indonesia.
+              I will update what the client is and what problems the client has the site developer wants or anything
+              about the UI / UX Designer, I will find a solution to the problem.
+              In my work I will work hard, never give up, take risks, be responsible and most importantly be honest.
+              I like a minimalist style, in my opinion, minimalism is cool and there are not many attributes used so it
+              looks elegant in my opinion</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Services -->
+  <section class="service" id="service">
+    <div class="container">
+      <div class="section-heading">
+      </div>
+      <div class="my-skills">
+        <div class="web-design" data-aos="fade-right">
+          <div class="skills">
+            <h1>Web Design</h1>
+            <p>I use this tool when designing and making a website framework such as a template. First I will design it
+              first in Figma, then go to HTML and CSS. I am already an expert in using HTML, CSS too. Using Javascript
+              is not completely possible, using My React is still being studied and continues to develop until now. I
+              already understand using Bootstrap and it's not that difficult to use it.</p>
+          </div>
+          <div class="icn">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i> <img src="assets/svg/figma-1.svg" alt="" width="17" class="figma"></i>
+          </div>
+        </div>
+        <div class="web-development" data-aos="fade-left">
+          <div class="skills">
+            <h1>Web Development</h1>
+            <p>To develop my site using PHP, I understand PHP. The framework that I master is Codeigniter and Laravel,
+              the relational database management system that I use MySQL if the client wants to use other databases I am
+              ready to learn, if the client wants to use Wodrpress I am ready to use it.</p>
+          </div>
+          <div class="icn">
+            <i class="fab fa-php"></i>
+            <i class="fab fa-laravel"></i>
+            <i><img src="assets/svg/codeigniter.svg" alt="" width="25" class="codeigniter"></i>
+            <i><img src="assets/img/mysql-5.png" alt="" width="55" class="mysql"></i>
+            <i class="fab fa-wordpress"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Services -->
+
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading" data-aos="fade-in">
+          <h1>All Projects</h1>
+          <p>Selected Project</p>
+        </div>
+        <div class="portfolio-item" data-aos="fade-left">
+          <div class="col-md-6">
+            <div class="portfolio-img">
+              <img src="assets/img/Desktop - 1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-descripstion">
+              <h6>Web Design</h6>
+              <h1>ADIDAS WEBSITE (Fake Project)</h1>
+              <p>This design project is just my thoughts who like minimalist design
+              </p>
+              <a href="project1.html">Views Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-item" data-aos="fade-right">
+          <div class="col-md-6">
+            <div class="portfolio-descripstion">
+              <h6>Web design</h6>
+              <h1>Nike (Fake Project)</h1>
+              <p>This design is just my thoughts and I think this design is very modern minimalist</p>
+              <a href="project2.html">Views Details</a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="portfolio-img">
+              <img src="assets/img/Desktop - 2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="portfolio-item" data-aos="fade-left">
+          <div class="col-md-6">
+            <div class="portfolio-img">
+              <img src="assets/img/bmw.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-descripstion">
+              <h6>Web Design</h6>
+              <h1>SPORTCAR WEBSITE (fake project)</h1>
+              <p>
+                This BMW Website Design Project is a fake project and is my own thought
+              </p>
+              <a href="project3.html">Views Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-item" data-aos="fade-right">
+          <div class="col-md-6">
+            <div class="portfolio-descripstion">
+              <h6>Web development</h6>
+              <h1>TRAVELING WEBSITE (Fake Project)</h1>
+              <p>
+                For me this project is just for fun, this project makes it easier for developers and users to book and climb mountains
+              </p>
+              <a href="project4.html">Views Details</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-img">
+              <img src="assets/img/hiking.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-item" data-aos="fade-left">
+          <div class="col-md-6">
+            <div class="portfolio-img">
+              <img src="assets/img/komputer.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-descripstion">
+              <h6>Web development</h6>
+              <h1>E-COMMERCE WEBSITE (Fake Project)</h1>
+              <p>E-commerce Website designs and builds a sales site for Computer Gaming
+              </p>
+              <a href="project5.html">Views Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio -->
+
+  <!-- Our Client -->
+  <section class="ourlcient" id="client">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading" data-aos="fade-in">
+          <h1>companies that I've worked with</h1>
+        </div>
+        <div class="col-md-12">
+          <div class="client-item" data-aos="fade-in">
+            <img src="assets/svg/coca-cola.svg" alt="">
+            <img src="assets/svg/grab.svg" alt="">
+            <img src="assets/svg/adidas-9.svg" alt="" class="adidas">
+            <img src="assets/img/nike-3.png" alt="" class="nike">
+            <img src="assets/svg/rolex-logo.svg" alt="">
+            <img src="assets/img/bmw-m-series-1.png" alt="BMW-M-Series">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Our Client -->
+
+  <!-- Footer -->
+
+  <section class="footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading" data-aos="fade-in">
+          <h1>Contact</h1>
+        </div>
+        <div class="col-md-12">
+          <form action="mailto:farhanalma777@gmail.com"
+            method="POST">
+            <div class="input mb-3" data-aos="fade-right">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name"
+                autocomplete="off">
+            </div>
+
+            <div class="input mb-3" data-aos="fade-left">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="email@gmail.com"
+                autocomplete="off">
+            </div>
+
+            <div class="input mb-3" data-aos="fade-right">
+              <label for="exampleFormControlTextarea1" class="form-label">Choose</label>
+              <select class="form-select" aria-label="Default select example" id="chose">
+                <option selected>-- Choose --</option>
+                <option value="1">Web Design</option>
+                <option value="2">Web Development</option>
+              </select>
+            </div>
+
+            <div class="input mb-3" data-aos="fade-left">
+              <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+              <textarea class="form-control" id="note" rows="3" autocomplete="off"
+                placeholder="Your message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-block button">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="copyright">
+            <p>&copy; Copyright 2020 All Right Reserved <a href="https://instagram.com/almarup21">Almarup</a></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="icn">
+            <div class="icon icn-intagram">
+              <a href="https://instagram.com/almarup21">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="icon icn-facebook">
+              <a href="https://web.facebook.com/people/Al-Marup">
+                <i class="fab fa-facebook-square "></i>
+              </a>
+            </div>
+
+            <div class="icon icn-twitter">
+              <a href="https://twitter.com/almarup21">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+
+            <div class="icon icn-github">
+              <a href="https://github.com/Almarup21">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+            <div class="icon icn-behance">
+              <a href="https://www.behance.net/muhamadfarhan5">
+                <i class="fab fa-behance-square"></i>
+              </a>
+            </div>
+
+            <div class="icon icn-dribbble">
+              <a href="https://dribbble.com/almarup21">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/libs/bootstrap-5.0.0-beta/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
