@@ -20,10 +20,30 @@
 
 <body>
 
-  <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
-  <label for="dark-light" class="dark"></label>
+  <div class="power-switch">
+    <input type="checkbox" />
+    <div class="button-switch">
+      <svg class="power-off">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+      <svg class="power-on">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+    </div>
+  </div>
 
-  <div class="light-back"></div>
+  <!-- SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+      <line x1="75" y1="34" x2="75" y2="58" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+      <circle cx="75" cy="80" r="35" />
+    </symbol>
+  </svg>
+
 
 
   <section class="project mt-5">
@@ -54,7 +74,9 @@
             <div class="project-img">
               <img src="assets/img/hiking2.jpg" alt="">
             </div>
-            <p>This site is a mountain climbing site from various mountains in the world. This site is just my thought and this site is a <span class="fw-bold"> fake project</span>. I have the thought of designing this site in a minimalist style so that users can easily look around or want to take a mountain climbing tour</p>
+            <p>This site is a mountain climbing site from various mountains in the world. This site is just my thought
+              and this site is a <span class="fw-bold"> fake project</span>. I have the thought of designing this site
+              in a minimalist style so that users can easily look around or want to take a mountain climbing tour</p>
             <img src="assets/img/hiking3.jpg" alt="">
           </div>
         </div>

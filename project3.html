@@ -20,10 +20,30 @@
 
 <body>
 
-  <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
-  <label for="dark-light" class="dark"></label>
+  <div class="power-switch">
+    <input type="checkbox" />
+    <div class="button-switch">
+      <svg class="power-off">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+      <svg class="power-on">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+    </div>
+  </div>
 
-  <div class="light-back"></div>
+  <!-- SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+      <line x1="75" y1="34" x2="75" y2="58" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+      <circle cx="75" cy="80" r="35" />
+    </symbol>
+  </svg>
+
 
 
   <section class="project mt-5">
@@ -54,8 +74,10 @@
             <div class="project-img">
               <img src="assets/img/bmw.jpg" alt="">
             </div>
-            <p>This company is a well-known company from Germany and who is not familiar with the company. I had the thought of redesigning the company's website and trying to implement it in a minimalist and modern style.
-              I am very happy with the design I made for a car company from Germany. this is a <span class="fw-bold">fake project</span> 
+            <p>This company is a well-known company from Germany and who is not familiar with the company. I had the
+              thought of redesigning the company's website and trying to implement it in a minimalist and modern style.
+              I am very happy with the design I made for a car company from Germany. this is a <span
+                class="fw-bold">fake project</span>
             </p>
 
           </div>

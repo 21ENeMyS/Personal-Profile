@@ -20,10 +20,30 @@
 
 <body>
 
-  <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
-  <label for="dark-light" class="dark"></label>
+  <div class="power-switch">
+    <input type="checkbox" />
+    <div class="button-switch">
+      <svg class="power-off">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+      <svg class="power-on">
+        <use xlink:href="#line" class="line" />
+        <use xlink:href="#circle" class="circle" />
+      </svg>
+    </div>
+  </div>
 
-  <div class="light-back"></div>
+  <!-- SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+      <line x1="75" y1="34" x2="75" y2="58" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+      <circle cx="75" cy="80" r="35" />
+    </symbol>
+  </svg>
+
 
 
   <section class="project mt-5">
@@ -54,7 +74,9 @@
             <div class="project-img">
               <img src="assets/img/gaming_computer 1.jpg" alt="">
             </div>
-            <p>This site is an E-commerce site or a site selling computer parts for playing video games. I created this site to implement my skills, from designing and developing it. And just for my thoughts, this is a <span class="fw-bold"> fake project </span> that I made</p>
+            <p>This site is an E-commerce site or a site selling computer parts for playing video games. I created this
+              site to implement my skills, from designing and developing it. And just for my thoughts, this is a <span
+                class="fw-bold"> fake project </span> that I made</p>
 
             <img src="assets/img/gaming_computer 1-1.jpg" alt="">
             <img src="assets/img/gaming_computer 1-2.jpg" alt="">
