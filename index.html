@@ -69,10 +69,31 @@
     </svg>
   </div>
 
-  <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
-  <label for="dark-light" class="dark"></label>
+  <!-- <div class="button-switch"> -->
+    <div class="power-switch">
+      <input type="checkbox" />
+      <div class="button-switch">
+        <svg class="power-off">
+          <use xlink:href="#line" class="line" />
+          <use xlink:href="#circle" class="circle" />
+        </svg>
+        <svg class="power-on">
+          <use xlink:href="#line" class="line" />
+          <use xlink:href="#circle" class="circle" />
+        </svg>
+      </div>
+    </div>
+  </div>
 
-  <div class="light-back"></div>
+  <!-- SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+      <line x1="75" y1="34" x2="75" y2="58" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+      <circle cx="75" cy="80" r="35" />
+    </symbol>
+  </svg>
 
 
 
@@ -130,18 +151,22 @@
   <section class="about" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right">
+        <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-up">
           <div class="profile-img">
             <img src="assets/img/farhan-05.png" alt="" class="profile">
           </div>
         </div>
 
         <div class="col-md-6">
-          <div class="about-details" data-aos="fade-left">
+          <div class="about-details" data-aos="fade-up">
             <div class="about-heading">
               <h1>About</h1>
             </div>
-            <p>I am a <span class="fw-bold">Fullstack Developer and UI UX Designer</span>. I am still studying at Bina Sarana Informatika University in Sukabumi, Indonesia. If you have problems in UI / UX Design, or develop a website I am ready to work with you, and find solutions to those problems. In my work I will work hard, never give up, take risks, be responsible and most importantly be honest. I like the minimalist style, in my opinion, minimalism is cool and the attributes used are not many so it looks elegant in my opinion</p>
+            <p>I am a <span class="fw-bold">Fullstack Developer and UI UX Designer</span>. I am still studying at Bina
+              Sarana Informatika University in Sukabumi, Indonesia. If you have problems in UI / UX Design, or develop a
+              website I am ready to work with you, and find solutions to those problems. In my work I will work hard,
+              never give up, take risks, be responsible and most importantly be honest. I like the minimalist style, in
+              my opinion, minimalism is cool and the attributes used are not many so it looks elegant in my opinion</p>
           </div>
         </div>
       </div>
@@ -156,7 +181,7 @@
       <div class="section-heading">
       </div>
       <div class="my-skills">
-        <div class="web-design" data-aos="fade-right">
+        <div class="web-design" data-aos="fade-up">
           <div class="skills">
             <h1>Web Design</h1>
             <p>I use this tool when designing and making a website framework such as a template. First I will design it
@@ -173,7 +198,7 @@
             <i> <img src="assets/svg/figma-1.svg" alt="" width="17" class="figma"></i>
           </div>
         </div>
-        <div class="web-development" data-aos="fade-left">
+        <div class="web-development" data-aos="fade-up">
           <div class="skills">
             <h1>Web Development</h1>
             <p>To develop my site using PHP, I understand PHP. The framework that I master is Codeigniter and Laravel,
@@ -203,7 +228,7 @@
           <h1>All Projects</h1>
           <p>Selected Project</p>
         </div>
-        <div class="portfolio-item" data-aos="fade-left">
+        <div class="portfolio-item" data-aos="fade-up">
           <div class="col-md-6">
             <div class="portfolio-img">
               <img src="assets/img/Desktop - 1.jpg" alt="">
@@ -221,7 +246,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="portfolio-item" data-aos="fade-right">
+        <div class="portfolio-item" data-aos="fade-up">
           <div class="col-md-6">
             <div class="portfolio-descripstion">
               <h6>Web design</h6>
@@ -240,7 +265,7 @@
 
       </div>
       <div class="row">
-        <div class="portfolio-item" data-aos="fade-left">
+        <div class="portfolio-item" data-aos="fade-up">
           <div class="col-md-6">
             <div class="portfolio-img">
               <img src="assets/img/bmw.jpg" alt="">
@@ -259,13 +284,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="portfolio-item" data-aos="fade-right">
+        <div class="portfolio-item" data-aos="fade-up">
           <div class="col-md-6">
             <div class="portfolio-descripstion">
               <h6>Web development</h6>
               <h1>TRAVELING WEBSITE (Fake Project)</h1>
               <p>
-                For me this project is just for fun, this project makes it easier for developers and users to book and climb mountains
+                For me this project is just for fun, this project makes it easier for developers and users to book and
+                climb mountains
               </p>
               <a href="project4.html">Views Details</a>
             </div>
@@ -278,7 +304,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="portfolio-item" data-aos="fade-left">
+        <div class="portfolio-item" data-aos="fade-up">
           <div class="col-md-6">
             <div class="portfolio-img">
               <img src="assets/img/komputer.jpg" alt="">
@@ -330,34 +356,31 @@
           <h1>Contact</h1>
         </div>
         <div class="col-md-12">
-          <form action="mailto:farhanalma777@gmail.com"
-            method="POST">
-            <div class="input mb-3" data-aos="fade-right">
+          <form action="mailto:farhanalma777@gmail.com" method="POST">
+            <div class="input mb-3" data-aos="fade-up">
               <label for="exampleFormControlInput1" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your name"
-                autocomplete="off">
+              <input type="text" class="form-control" id="name" placeholder="Your name" autocomplete="off">
             </div>
 
-            <div class="input mb-3" data-aos="fade-left">
+            <div class="input mb-3" data-aos="fade-up">
               <label for="exampleFormControlInput1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="email@gmail.com"
-                autocomplete="off">
+              <input type="email" class="form-control" id="email" placeholder="email@gmail.com" autocomplete="off">
             </div>
 
-            <div class="input mb-3" data-aos="fade-right">
+            <!-- <div class="input mb-3" data-aos="fade-up">
               <label for="exampleFormControlTextarea1" class="form-label">Choose</label>
               <select class="form-select" aria-label="Default select example" id="chose">
                 <option selected>-- Choose --</option>
                 <option value="1">Web Design</option>
                 <option value="2">Web Development</option>
               </select>
-            </div>
+            </div> -->
 
-            <div class="input mb-3" data-aos="fade-left">
+            <!-- <div class="input mb-3" data-aos="fade-up">
               <label for="exampleFormControlTextarea1" class="form-label">Note</label>
               <textarea class="form-control" id="note" rows="3" autocomplete="off"
                 placeholder="Your message"></textarea>
-            </div>
+            </div> -->
 
             <button type="submit" class="btn btn-block button">Send</button>
           </form>

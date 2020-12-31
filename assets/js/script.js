@@ -22,7 +22,7 @@ $('.nav-link ').on('click', function () {
   $('.navbar-collapse').removeClass('show');
 })
 
-$('.dark-light').on('click', function () {
+$('.power-switch').on('click', function () {
   $('body').toggleClass('darken');
 })
 
